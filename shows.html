@@ -17,7 +17,7 @@
           <ul class="nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="shows.html">Shows</a></li>
+            <li><a href="#">Shows</a></li>
             <li><a href="#">Music</a></li>
             <li><a href="#">Blog</a></li>
           </ul>
@@ -26,19 +26,21 @@
     </div>
 
     <div class="row">
-      <div class="small-8 columns" id="main">
+      <div class="large-12 columns">
         <div class="content">
-          <h3>Hello, Welcome!</h3>
-          <p>This is a paragraph</p>
+          <h3>Tour Dates</h3>
+          <div id="tour">
+            <script type='text/javascript' src='http://widget.bandsintown.com/javascripts/bit_widget.js'></script><a href="http://www.bandsintown.com/Max%20Ross" class="bit-widget-initializer" data-artist="Max Ross">Max Ross Tour Dates</a>
+          </div>
         </div>
       </div>
-      <div class="small-4 columns" id="side">
+      <!-- <div class="small-4 columns">
         <div class="content">
           <h3>Sidebar</h3>
-          <p>Shows</p>
-          <script type='text/javascript' src='http://widget.bandsintown.com/javascripts/bit_widget.js'></script><a href="http://www.bandsintown.com/Max%20Ross" class="bit-widget-initializer" data-artist="Max Ross" data-force-narrow-layout="true" data-display-limit="3" data-share-links="false">Max Ross Tour Dates</a>
+          <p>This is a sidebar</p>
         </div>
       </div>
+    </div> -->
     </div>
 
     <div class="row">
@@ -66,27 +68,6 @@
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
-    </script>
-    <script src="js/enquire.js"></script>
-    <script>
-      var $side = $('#side');
-      var $main = $('#main');
-
-      enquire.register("screen and (max-width: 40.063em)", {
-          match: function() {
-              $side.removeClass('small-4 columns');
-              $side.addClass('hiddenSide');
-              $main.removeClass('small-8 columns');
-              $main.addClass('large-12 columns');
-          },
-
-          unmatch: function() {
-              $side.removeClass('hiddenSide');
-              $side.addClass('small-4 columns');
-              $main.removeClass('large-12 columns');
-              $main.addClass('small-8 columns');
-          }
-      }).listen();
     </script>
   </body>
 </html>
