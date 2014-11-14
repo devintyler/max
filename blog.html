@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Max Ross</title>
+    <title>Max Ross | Blog</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/vendor/modernizr.js"></script>
@@ -26,19 +26,17 @@
     </div>
 
     <div class="row">
-      <div class="large-12 columns">
+      <div class="large-12 columns" id="main">
         <div class="content">
-          <h3>Tour Dates</h3>
-          <div id="tour">
-            <script type='text/javascript' src='http://widget.bandsintown.com/javascripts/bit_widget.js'></script><a href="http://www.bandsintown.com/Max%20Ross" class="bit-widget-initializer" data-artist="Max Ross">Max Ross Tour Dates</a>
-            <script scr="http://api.bandsintown.com/artists/Skrillex/events.json?api_version=2.0&app_id=Skrillex"></script>
-          </div>
+          <h3>Recent Things</h3>
+          <p>This is where recent blog posts about your life will be posted.</p>
         </div>
       </div>
-      <!-- <div class="small-4 columns">
-        <div class="content">
+      <!-- <div class="small-4 columns" id="side">
+        <div class="sidebar">
           <h3>Sidebar</h3>
-          <p>This is a sidebar</p>
+          <p>Shows</p>
+          <script type='text/javascript' src='http://widget.bandsintown.com/javascripts/bit_widget.js'></script><a href="http://www.bandsintown.com/Max%20Ross" class="bit-widget-initializer" data-artist="Max Ross" data-force-narrow-layout="true" data-display-limit="3" data-share-links="false">Max Ross Tour Dates</a>
         </div>
       </div> -->
     </div>
@@ -66,9 +64,29 @@
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
-    <script src="js/bands.js"></script>
     <script>
       $(document).foundation();
+    </script>
+    <script src="js/enquire.js"></script>
+    <script>
+      var $side = $('#side');
+      var $main = $('#main');
+
+      enquire.register("screen and (max-width: 40.063em)", {
+          match: function() {
+              $side.removeClass('small-4 columns');
+              $side.addClass('hiddenSide');
+              $main.removeClass('small-8 columns');
+              $main.addClass('large-12 columns');
+          },
+
+          unmatch: function() {
+              $side.removeClass('hiddenSide');
+              $side.addClass('small-4 columns');
+              $main.removeClass('large-12 columns');
+              $main.addClass('small-8 columns');
+          }
+      }).listen();
     </script>
   </body>
 </html>
