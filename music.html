@@ -13,14 +13,39 @@
     <div class="row">
       <div class="small-12 columns">
         <div class="header">
-          <a href="index.html"><h1>Max Ross</h1></a>
-          <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="shows.html">Shows</a></li>
-            <li><a href="music.html">Music</a></li>
-            <li><a href="blog.html">Blog</a></li>
-          </ul>
+          <!-- <a href="index.html"><h1>Max Ross</h1></a> -->
+          <div class="off-canvas-wrap" data-offcanvas>
+            <div class="inner-wrap">
+
+              <a class="" href="index.html" ><h1>Max Ross</h1>
+              <a class="hiddenSide" id="menu" href="#" >Menu</a>
+
+              <!-- Off Canvas Menu -->
+              <aside class="left-off-canvas-menu">
+                  <!-- whatever you want goes here -->
+                  <ul class="">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="shows.html">Shows</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                  </ul>
+              </aside>
+
+            <!-- close the off-canvas menu -->
+            <a class="exit-off-canvas"></a>
+
+            </div>
+          </div>
+              <ul class="nav" id="ulList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shows.html">Shows</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="blog.html">Blog</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -72,6 +97,9 @@
     <script>
       var $side = $('#side');
       var $main = $('#main');
+      var $nav = $('#navBar');
+      var $ul = $('#ulList');
+      var $menu = $('#menu');
 
       enquire.register("screen and (max-width: 40.063em)", {
           match: function() {
@@ -79,6 +107,10 @@
               $side.addClass('hiddenSide');
               $main.removeClass('small-8 columns');
               $main.addClass('large-12 columns');
+              $ul.removeClass('nav');
+              $ul.addClass('hiddenSide');
+              $menu.removeClass('hiddenSide');
+              $menu.addClass('left-off-canvas-toggle');
           },
 
           unmatch: function() {
@@ -86,6 +118,10 @@
               $side.addClass('small-4 columns');
               $main.removeClass('large-12 columns');
               $main.addClass('small-8 columns');
+              $ul.addClass('nav');
+              $ul.removeClass('hiddenSide');
+              $menu.removeClass('left-off-canvas-toggle');
+              $menu.addClass('hiddenSide');
           }
       }).listen();
     </script>
