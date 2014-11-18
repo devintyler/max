@@ -68,26 +68,28 @@
       </div> -->
     </div>
 
-    <div class="row">
-      <div class="large-12 columns">
+    <!-- ******** FOOTER ******** -->
+    <!-- <div class="row"> -->
+      <!-- <div class="large-12 columns"> -->
         <div class="footer">
           <div class="row">
-            <div class="small-4 columns">
+            <div class="small-6 columns">
               <h4>Footer Info</h4>
-              <p>This is a footer</p>
+              <p>Copyright &copy; 2014 Max Ross</p>
             </div>
-            <div class="small-4 columns">
-              <h4>Social Media</h4>
-              <p>This is a social</p>
-            </div>
-            <div class="small-4 columns">
-              <h4>Mailing</h4>
-              <p>This is a contact</p>
+            <div class="small-6 columns">
+              <div class="social">
+                <h4>Visit Max Ross:</h4>
+                <a href="#"><img src="img/facebook.png"></a>
+                <a href="#"><img src="img/twitter.png"></a>
+                <a href="#"><img src="img/youtube.png"></a>
+                <a href="#"><img src="img/Instagram.png"></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      <!-- </div> -->
+    <!-- </div> --> <!-- End Footer -->
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
@@ -95,36 +97,6 @@
       $(document).foundation();
     </script>
     <script src="js/enquire.js"></script>
-    <script>
-      var $side = $('#side');
-      var $main = $('#main');
-      var $nav = $('#navBar');
-      var $ul = $('#ulList');
-      var $menu = $('#menu');
-
-      enquire.register("screen and (max-width: 40.063em)", {
-          match: function() {
-              $side.removeClass('small-4 columns');
-              $side.addClass('hiddenSide');
-              $main.removeClass('small-8 columns');
-              $main.addClass('large-12 columns');
-              $ul.removeClass('nav');
-              $ul.addClass('hiddenSide');
-              $menu.removeClass('hiddenSide');
-              $menu.addClass('left-off-canvas-toggle');
-          },
-
-          unmatch: function() {
-              $side.removeClass('hiddenSide');
-              $side.addClass('small-4 columns');
-              $main.removeClass('large-12 columns');
-              $main.addClass('small-8 columns');
-              $ul.addClass('nav');
-              $ul.removeClass('hiddenSide');
-              $menu.removeClass('left-off-canvas-toggle');
-              $menu.addClass('hiddenSide');
-          }
-      }).listen();
-    </script>
+    <script src="js/format.js"></script>
   </body>
 </html>
