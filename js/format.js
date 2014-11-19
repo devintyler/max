@@ -3,7 +3,8 @@ var $main = $('#main');
 var $nav = $('#navBar');
 var $ul = $('#ulList');
 var $menu = $('#menu');
-var $body = $('body')
+var $body = $('body');
+var $sub = $('#subMenu');
 
 enquire.register("screen and (max-width: 40.063em)", {
     match: function() {
@@ -16,6 +17,8 @@ enquire.register("screen and (max-width: 40.063em)", {
         $menu.removeClass('hiddenSide');
         $menu.addClass('left-off-canvas-toggle');
         $body.removeClass('source');
+        $sub.removeClass('hiddenSide');
+        $sub.addClass('left-off-canvas-menu');
     },
 
     unmatch: function() {
@@ -28,5 +31,7 @@ enquire.register("screen and (max-width: 40.063em)", {
         $menu.removeClass('left-off-canvas-toggle');
         $menu.addClass('hiddenSide');
         $body.addClass('source');
+        $sub.removeClass('left-off-canvas-menu');
+        $sub.addClass('hiddenSide');
     }
 }).listen();

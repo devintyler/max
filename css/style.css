@@ -68,10 +68,6 @@ body {
 		/*color: #ddd;*/
 	}
 
-.inner-wrap {
-	/*height: 130px;*/
-}
-
 .left-off-canvas-menu {
 	/*height: 500px;*/
 }
@@ -81,11 +77,16 @@ body {
 		/*font-size: 10pt;*/
 	}
 
+.off-canvas-list {
+	text-align: center;
+}
+
 .content {
 	width: 100%;
 	height: 100%;
 	min-height: 500px;
 	padding: 20px 20px 20px 20px;
+	margin-bottom: 120px;
 	background: rgba(0,0,0,0.7);
 }
 
@@ -131,8 +132,10 @@ h2, h3, h4, h5, h6 {
 	}
 
 .hiddenSide {
+	display: none;
 	visibility: hidden;
 	height: 0px;
+	width: 0px;
 }
 
 
