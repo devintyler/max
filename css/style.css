@@ -3,7 +3,7 @@
 * 
 */
 
-@import url(http://fonts.googleapis.com/css?family=Armata);
+@import url(http://fonts.googleapis.com/css?family=Domine);
 
 
 html {
@@ -13,7 +13,7 @@ html {
 body {
 	color: #fff;
 	height: 100%;
-	font-family: 'Armata', sans-serif;
+	font-family: 'Domine', sans-serif;
 	background-color: #222;
 	/*margin-top: 30px;*/
 	/*background-color: #fff;
@@ -136,6 +136,10 @@ h2, h3, h4, h5, h6 {
 	visibility: hidden;
 	height: 0px;
 	width: 0px;
+}
+
+.flex-video {
+    padding-bottom: 67.5% !important;
 }
 
 
