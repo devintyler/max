@@ -1,0 +1,151 @@
+/**
+* Custom CSS for Max Ross's Site
+* 
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Domine);
+
+
+html {
+	height: 100%;
+}
+
+body {
+	color: #000;
+	height: 100%;
+	font-family: 'Domine', sans-serif;
+	background-color: #ddd;
+	/*margin-top: 30px;*/
+	/*background-color: #fff;
+	opacity: 0.7;*/
+}
+
+.source { /*check on ipad*/
+	/*min-height: 100vh;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(../img/background.jpeg);*/
+	background: url(../img/background2.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.header {
+	padding-top: 20px;
+	background: rgba(240,225,205,0.7);
+	text-align: center;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	z-index: 999;
+}
+
+.nav {
+	width: 390px;
+	font-size: 14pt;
+	text-align: center;
+	list-style: none outside;
+	margin:0 auto;
+	padding-bottom: 30px;
+	margin-top: -10px;
+}
+
+	.nav li {
+		width: auto;
+		float: left;
+		padding: 0 10px;
+	}
+
+	.nav a {
+		/*color: #999;*/
+		display: block;
+	}
+
+	.nav a:hover {
+		/*color: #ddd;*/
+	}
+
+.left-off-canvas-menu {
+	/*height: 500px;*/
+}
+
+	.left-off-canvas-menu li {
+		list-style: none outside;
+		/*font-size: 10pt;*/
+	}
+
+.off-canvas-list {
+	text-align: center;
+}
+
+.content {
+	width: 100%;
+	height: 100%;
+	min-height: 600px;
+	padding: 20px 20px 20px 20px;
+	margin-bottom: 120px;
+	background: rgba(240,225,205,0.7);
+}
+
+.sidebar {
+	width: 100%;
+	height: 100%;
+	min-height: 600px;
+	padding: 20px 20px 20px 20px;
+	background: rgba(255,255,255,0.8);
+}
+
+h1 {
+	color: #000;
+	font-size: 65px;
+	font-family: 'Armata', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+	color: #000;
+	font-family: 'Armata', sans-serif;
+}
+
+.footer {
+	position:fixed;
+	width: 100%;
+	margin-top: 3em;
+	text-align: center;
+	padding: 10px 0 5px 0;
+	background: rgba(245,245,245,0.9);
+	/*left:0px;*/
+	right: 0;
+  	bottom:0;
+  	left: 0;
+}
+
+.social {
+
+}
+
+	.social img {
+		width: 40px;
+		padding: -1px;
+	}
+
+.hiddenSide {
+	display: none;
+	visibility: hidden;
+	height: 0px;
+	width: 0px;
+}
+
+.flex-video {
+    padding-bottom: 67.5% !important;
+}
+
+table {
+	border-color: #444;
+}
+
+	table tr th {
+		color: #fff;
+	}
