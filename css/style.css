@@ -119,6 +119,13 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00abd6', endColorstr='#006582',GradientType=0 ); /* IE6-9 */
 }
 
+audio {
+	position: fixed;
+	width: 100%;
+	left: 0px;
+	bottom: 0px;
+}
+
 h1 {
 	color: #fff;
 	font-size: 65px;
