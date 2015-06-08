@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" ng-app="MaxRoss">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/swipebox.css">
+    <link rel="stylesheet" type="text/css" href="css/animations.css">
+    <link rel="stylesheet" type="text/css" href="css/hover.css">
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body class="source">
@@ -15,50 +17,35 @@
         <aside class="hiddenSide" id="subMenu">
             <!-- whatever you want goes here -->
             <ul class="off-canvas-list">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="shows.html">Shows</a></li>
-              <li><a href="music.html">Music</a></li>
-              <li><a href="blog.html">Blog</a></li>
+              <li><a href="#/">Home</a></li>
+              <li><a href="#/about">About</a></li>
+              <li><a href="#/shows">Shows</a></li>
+              <li><a href="#/music">Music</a></li>
+              <li><a href="#/blog">Blog</a></li>
             </ul>
         </aside>
         <div class="row">
           <div class="small-12 columns">
             <div class="header">
 
-                  <a class="" href="index.html" ><h1>Max Ross</h1></a>
-                  <a class="hiddenSide" id="menu" href="#" >Menu</a>
+                  <a class="" href="#/" ><h1>Max Ross</h1></a>
+                  <a class="hiddenSide" id="menu">Menu</a>
                   
                   <ul class="nav" id="ulList">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="shows.html">Shows</a></li>
-                    <li><a href="music.html">Music</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#/">Home</a></li>
+                    <li><a href="#/about">About</a></li>
+                    <li><a href="#/shows">Shows</a></li>
+                    <li><a href="#/music">Music</a></li>
+                    <li><a href="#/blog">Blog</a></li>
                   </ul>
             </div>
           </div>
         </div>
 
-        <div class="row">
-          <div class="small-8 columns" id="main">
-            <div class="content">
-              <h3>Hello, Welcome!</h3><br>
-              <p>Check out some stuff I've done!</p>
-            </div>
-          </div>
-          <div class="small-4 columns" id="side">
-            <div class="sidebar">
-              <h3>Recent News</h3>
-              <p>Shows</p>
-              <script type='text/javascript' src='http://widget.bandsintown.com/javascripts/bit_widget.js'></script><a href="http://www.bandsintown.com/Max%20Ross" class="bit-widget-initializer" data-artist="Max Ross" data-force-narrow-layout="true" data-display-limit="3" data-share-links="false" data-bg-color="#222" data-separator-color="#444">Max Ross Tour Dates</a>
-              <!-- Put regular YouTube link between the "" after href= -->
-              <a class="swipebox-video" href="http://www.youtube.com/watch?v=n2TLxrrZHUc">
-                <img src="img/Video.png">
-              </a>
-            </div>
-          </div>
+        <div id="main">
+          <div ng-view></div>
         </div>
+
         <!-- close the off-canvas menu -->
         <a class="exit-off-canvas"></a>
       </div>
@@ -80,7 +67,7 @@
                     <a href="#"><img src="img/twitter.png"></a>
                     <a href="#"><img src="img/youtube.png"></a>
                     <a href="#"><img src="img/Instagram.png"></a>
-                    <p style="padding-top: 10px;">Copyright &copy; 2014 Max Ross</p>
+                    <p style="padding-top: 10px;">Copyright &copy; 2015 Max Ross</p>
                   </div>
                 </div>
               </div>
@@ -88,26 +75,33 @@
           <!-- </div> -->
         <!-- </div> --> <!-- End Footer -->
 
-    
-    <!--<script>
-      $("#header").load("header.html");
-      $('.footer').load('footer.html');
-    </script> -->
+    <!-- JS -->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
-    <script src="js/foundation.js"></script>
-    <script src="js/foundation.offcanvas.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script src="js/foundation/foundation.offcanvas.js"></script>
     <script src="js/jquery-2.1.0.min.js"></script>
     <script src="js/jquery.swipebox.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
     <script type="text/javascript">
       ;( function( $ ) {
         $( '.swipebox-video' ).swipebox();
       } )( jQuery );
     </script>
-    <script>
-      $(document).foundation();
-    </script>
+
+    <script src="js/vendor/angular.js"></script>
+    <script src="js/vendor/angular-route.js"></script>
+    <script src="js/vendor/angular-messages.js"></script>
+    <script src="js/app.js"></script>
+
+    <script src="controllers/home.js"></script>
+    <script src="controllers/about.js"></script>
+
     <script src="js/enquire.js"></script>
     <script src="js/format.js"></script>
+    <!-- END JS -->
+    
   </body>
 </html>

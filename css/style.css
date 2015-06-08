@@ -87,6 +87,7 @@ body {
 	min-height: 590px;
 	padding: 20px 20px 20px 20px;
 	background: rgba(0,81,122,0.7);
+	border: 2px solid gray;
 }
 
 #about {
@@ -110,14 +111,14 @@ body {
 	width: 100%;
 	display: 50%;
 	margin-bottom: 1em;
-	/*background: #00abd6; /* Old browsers */*/
-	/*background: -moz-linear-gradient(top,  #00abd6 0%, #006582 100%); /* FF3.6+ */*/
-	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00abd6), color-stop(100%,#006582)); /* Chrome,Safari4+ */*/
-	/*background: -webkit-linear-gradient(top,  #00abd6 0%,#006582 100%); /* Chrome10+,Safari5.1+ */*/
-	/*background: -o-linear-gradient(top,  #00abd6 0%,#006582 100%); /* Opera 11.10+ */*/
-	/*background: -ms-linear-gradient(top,  #00abd6 0%,#006582 100%); /* IE10+ */*/
-	/*background: linear-gradient(to bottom,  #00abd6 0%,#006582 100%); /* W3C */*/
-	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00abd6', endColorstr='#006582',GradientType=0 ); /* IE6-9 */*/
+	/*background: #00abd6; /* Old browsers */
+	/*background: -moz-linear-gradient(top,  #00abd6 0%, #006582 100%); /* FF3.6+ */
+	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00abd6), color-stop(100%,#006582)); /* Chrome,Safari4+ */
+	/*background: -webkit-linear-gradient(top,  #00abd6 0%,#006582 100%); /* Chrome10+,Safari5.1+ */
+	/*background: -o-linear-gradient(top,  #00abd6 0%,#006582 100%); /* Opera 11.10+ */
+	/*background: -ms-linear-gradient(top,  #00abd6 0%,#006582 100%); /* IE10+ */
+	/*background: linear-gradient(to bottom,  #00abd6 0%,#006582 100%); /* W3C */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00abd6', endColorstr='#006582',GradientType=0 ); /* IE6-9 */
 }
 
 	.musicBox img {
