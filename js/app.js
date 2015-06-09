@@ -1,4 +1,4 @@
-angular.module('MaxRoss', ['ngRoute', 'ngMessages'])
+angular.module('MaxRoss', ['ngRoute', 'ngMessages', 'ngResource'])
   .config(function($routeProvider, $locationProvider) {
 
   	// Provides routing
@@ -13,7 +13,7 @@ angular.module('MaxRoss', ['ngRoute', 'ngMessages'])
 		  })
 		  .when('/blog', {
 		    templateUrl: 'views/blog.html',
-		    controller: 'BlogCtrl'
+		    controller: 'FeedCtrl'
 		  })
 		  .when('/music', {
 		    templateUrl: 'views/music.html',
