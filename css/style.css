@@ -91,9 +91,13 @@ body {
 }
 
 #about {
-	width: 90%;
+	width: 100%;
 	padding: 1.5em;
 	background: rgba(30,30,30,0.7);
+}
+
+.bioImg img {
+	width: 100%;
 }
 
 .projects {
