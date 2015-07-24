@@ -5,7 +5,7 @@ angular.module('MaxRoss', ['ui.router', 'ngMessages', 'ngResource'])
   	$stateProvider
 
       .state('splash', {
-        url: '/',
+        url: '',
         templateUrl: 'views/splash.html',
         // controller: 'SplashCtrl'
       })
