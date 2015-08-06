@@ -203,6 +203,12 @@ h2, h3, h4, h5, h6 {
 		font-size: 11pt;
 	}
 
+@media (max-width: 767px) {
+	.footer {
+		height: 13%;
+	}
+}
+
 .social {
 
 }
