@@ -17,11 +17,11 @@ angular.module('MaxRoss', ['ui.router', 'ngMessages', 'ngResource'])
       })
 
       	// Main States
-		    .state('main.home', {
-	        url: '/home',
-	        templateUrl: 'views/home.html',
-	        controller: 'HomeCtrl'
-		    })
+		    // .state('main.home', {
+	     //    url: '/home',
+	     //    templateUrl: 'views/home.html',
+	     //    controller: 'HomeCtrl'
+		    // })
 
 			  .state('main.about', {
 			  	url: '/about',
